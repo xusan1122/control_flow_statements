@@ -13,4 +13,26 @@
     Returns:
         string: the message to return*/
 
-void main() {}
+String func(int number) {
+  if (number < 0) {
+    return "Freezing";
+  }
+  if (number >= 1 && number <= 10) {
+    return "Very Cold";
+  }
+  if (number >= 11 && number <= 20) {
+    return "Cold";
+  }
+  if (number >= 21 && number <= 30) {
+    return "Normal";
+  }
+  if (number >= 31 && number <= 40) {
+    return "Hot";
+  }
+    return "Very Hot";
+  
+}
+
+void main() {
+  print(func(-4));
+}

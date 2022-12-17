@@ -8,4 +8,25 @@
         c: integer
     returns:
         integer: the number of negative numbers in the given numbers*/
-void main() {}
+int func(int a, int b, int c) {
+  int d = 0;
+  if (a < 0) {
+     d += 1;
+  }
+  if (b < 0) {
+     d += 1;
+  }
+  if (c < 0) {
+     d += 1;
+  }
+  // if (func(a,b,c) == 0) {
+  //    d += 0;
+  // }
+  {
+    return d;
+  }
+}
+
+void main() {
+  print(func(-2, 4, 1));
+}
